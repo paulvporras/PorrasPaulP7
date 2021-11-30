@@ -1,0 +1,286 @@
+/* This will be the CSS file */
+
+/*--------------------------------------------------------
+GLOBAL STYLING
+--------------------------------------------------------*/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+
+}
+
+body {
+	font-family: 'Yantramanav', sans-serif;
+	font-weight: 400;
+	/*background-color: gold;*/
+}
+
+h1 {
+	font-size: 6vw;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 8vw;
+	margin-top: -40px;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 2vw;
+}
+
+p {
+	font-size: 2vw;
+
+}
+
+.navbar .navbar-nav{
+	background: transparent;
+	
+}
+
+.remove-all-padding{
+	padding-right: 0;
+	padding-left: 0;
+}
+
+
+.container {
+	/*background: purple;*/
+	display:flex;
+	position: relative;
+
+}
+
+.container-fluid {
+
+}
+
+@media (max-width: 800px) {
+		.container {
+			flex-direction: column;
+
+		}
+	}
+
+/*-------------------------------------------------------
+Horizontal Scrolling and Media Query for Vertical Scrolling
+-------------------------------------------------------
+Contains tags: .slide; .wrapper; .outer-wrapper*/
+
+.slide {
+	width: 100vw;
+	height: 100vh;
+}
+
+@media (max-width: 800px) {
+		.slide {
+			width: 100vw;
+			/*height: 300vh;*/
+
+		}
+	}
+
+.wrapper {
+	display: flex;
+	flex-direction: row;
+	width:200vw;
+	transform: rotate(90deg)translateY(-100vh);
+	transform-origin: top left;
+}
+
+@media (max-width: 800px) {
+		.wrapper {
+			flex-direction: column;
+			width: 100vw;
+			height: inherit;
+			overflow-y: scroll;
+			
+
+		}
+	}
+
+
+.outer-wrapper {
+	width: 100vh;
+	height: 100vw;
+	transform: rotate(-90deg) translateX(-100vh);
+	transform-origin: top left;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	position: absolute;
+	scrollbar-width: none;
+}
+
+@media (max-width: 800px) {
+		.outer-wrapper {
+			/*overflow-y:hidden;*/
+			scrollbar-width: auto;
+			height: 300vh;
+		}
+	}
+
+::-webkit-scrollbar {
+	display:none;
+}
+
+
+@media (max-width: 800px) {
+		::-webkit-scrollbar {
+		display: auto;
+		}
+	}
+
+
+
+/*-------------------------------------------------------
+Horizontal Scrolling and Media Query for Vertical Scrolling
+-------------------------------------------------------*/
+
+.one {
+	background-color: lightblue;
+	background-image: url('../images/KAWSFLOAT.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+@media (max-width: 800px) {
+		.one {
+			/*background-color: pink;*/
+			background-image: url('../images/KAWSFLOAT.jpg');
+			background-repeat: no-repeat;
+			height: 50vh;
+
+
+		}
+	}
+
+
+.two {
+	background-color: red;
+	background-image: url('../images/Bubble.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*-webkit-transform: scaleX(-1);
+  	transform: scaleX(-1);*/
+}
+
+@media (max-width: 800px) {
+		.two {
+			background-color: lightblue;
+			background-image: url('../images/Bubble.jpg');
+			background-repeat: no-repeat;
+			margin-top: 50vh;
+			height: 50vh;
+		}
+	}
+
+
+.three {
+	background-color: /*pink*/;
+
+	.@media (max-width: 800px) {
+		.three {
+			background-color: lightgreen;
+		}
+	}
+/*-------------------------------------------------------
+HEADER STYLING
+-------------------------------------------------------*/
+
+
+/*-------------------------------------------------------
+HOMEPAGE STYLING
+-------------------------------------------------------*/
+
+/*-------------------------------------
+Below is "hero" Section
+---------------------------------------
+contains tags: #hero*/
+
+	#skiesthelimit {
+		/*margin-top: 200px;
+		background: red;*/
+
+	}
+
+
+	@media (max-width: 800px) {
+		#skiesthelimit {
+			height: 100vh;
+			background-color: peachpuff;
+		}
+	}
+
+	#filltheair{
+	
+
+	}
+
+	@media (max-width: 800px) {
+		#filltheair {
+			height: 50vh;
+			background-color: peachpuff;
+		}
+	}
+
+	#three{
+
+	}
+
+	@media (max-width: 800px) {
+		#three {
+			/*height: 25vh;*/
+			background-color: peachpuff;
+		}
+	}
+
+
+
+/*-------------------------------------
+Below is "mission" Section
+---------------------------------------
+contains tags: #mission*/
+
+
+/*-------------------------------------
+Below is "break" Section
+---------------------------------------
+contains tags: #break*/
+
+
+/*-------------------------------------
+Below is "feature" Section
+---------------------------------------
+contains tags: #feature*/
+
+/*-------------------------------------
+Below is "find-us" Section
+---------------------------------------
+contains tags: #find-us*/
+
+
+/*-------------------------------------------------------
+INTERIOR PAGE 1
+-------------------------------------------------------*/
+
+/*-------------------------------------
+Below is "interior-hero" Section
+---------------------------------------
+contains tags: #hero*/
+
+
+/*-------------------------------------
+Below is "interior-section-1"
+---------------------------------------
+contains tags: #interior-section-1*/
+
+
+/*-------------------------------------
+Below is "interior-section-2"
+---------------------------------------
+contains tags: #interior-section-2*/
